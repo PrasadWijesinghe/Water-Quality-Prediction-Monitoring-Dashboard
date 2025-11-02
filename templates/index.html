@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Water Potability Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💧 Water Potability Prediction</h1>
+        <form action="/predict" method="post">
+            <div class="grid">
+                <input type="number" step="any" name="ph" placeholder="pH" required>
+                <input type="number" step="any" name="Hardness" placeholder="Hardness" required>
+                <input type="number" step="any" name="Solids" placeholder="Solids" required>
+                <input type="number" step="any" name="Chloramines" placeholder="Chloramines" required>
+                <input type="number" step="any" name="Sulfate" placeholder="Sulfate" required>
+                <input type="number" step="any" name="Conductivity" placeholder="Conductivity" required>
+                <input type="number" step="any" name="Organic_carbon" placeholder="Organic Carbon" required>
+                <input type="number" step="any" name="Trihalomethanes" placeholder="Trihalomethanes" required>
+                <input type="number" step="any" name="Turbidity" placeholder="Turbidity" required>
+            </div>
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if result %}
+            <h2 class="result">{{ result }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
