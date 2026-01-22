@@ -56,7 +56,7 @@ python -m pip install -r requirements.txt
 
 ## Run the App
 
-### Option A (recommended): Run with Uvicorn
+###  Run with Uvicorn
 
 From the project root:
 
@@ -70,35 +70,4 @@ Open:
 http://127.0.0.1:8000
 ```
 
-### Option B: Run the module directly
 
-This starts Uvicorn using the `__main__` block.
-
-From the project root:
-
-```powershell
-python app\main.py
-```
-
-## Model
-
-The app expects a trained model at:
-
-```text
-model/random_forest_model.pkl
-```
-
-If you don’t have the model yet, train it using the notebook:
-
-- `notebooks/02_model_training.ipynb`
-
-
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-```
-
-## License
-
-Add a license here if you plan to publish/distribute this project.
