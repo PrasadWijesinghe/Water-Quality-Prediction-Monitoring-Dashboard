@@ -92,15 +92,6 @@ If you don’t have the model yet, train it using the notebook:
 
 - `notebooks/02_model_training.ipynb`
 
-## Troubleshooting
-
-### `No such file or directory` for templates/static/model
-
-Run the app from the **project root** (the folder containing `app/`, `templates/`, `static/`, `model/`).
-
-### Dependency conflict warnings during install
-
-If pip reports conflicts (for example with unrelated packages like `langchain`), a clean virtual environment usually fixes it:
 
 ```powershell
 python -m venv .venv
