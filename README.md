@@ -37,7 +37,7 @@ The backend is built with **FastAPI** and serves a simple **HTML (Jinja2)** form
 
 ## Setup
 
-### 1) Create and activate a virtual environment (recommended)
+### 1) Create and activate a virtual environment 
 
 Windows (PowerShell):
 
